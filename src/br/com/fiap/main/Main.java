@@ -71,8 +71,8 @@ public class Main {
 		System.out.println("Data mais recente: "  + statuses.get(statuses.size() - 1).getCreatedAt());
 		
 		Collections.sort(statuses, new StatusNomeComparator());
-		System.out.println("Primeiro nome: " + statuses.get(0).getUser().getName());
-		System.out.println("Ultimo nome: "  + statuses.get(statuses.size() - 1).getUser().getName());
+		System.out.println("Primeiro nome: " + statuses.get(0).getUser().getScreenName());
+		System.out.println("Ultimo nome: "  + statuses.get(statuses.size() - 1).getUser().getScreenName());
 	}
 	
 	public static List<Status> recuperarTweets(Twitter twitter) throws TwitterException {

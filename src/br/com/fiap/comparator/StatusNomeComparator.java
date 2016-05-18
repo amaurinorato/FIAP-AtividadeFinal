@@ -8,7 +8,7 @@ public class StatusNomeComparator implements Comparator<Status> {
 
 	@Override
 	public int compare(Status status, Status outroStatus) {
-		return status.getUser().getName().compareTo(outroStatus.getUser().getName());
+		return status.getUser().getScreenName().compareTo(outroStatus.getUser().getScreenName());
 	}
 
 	
