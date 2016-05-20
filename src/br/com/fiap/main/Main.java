@@ -64,7 +64,7 @@ public class Main {
 			qtdTweets ++;
 		}
 		imprimeInformações(qtdRetweetsDia, favoritacoes, qtdTweets, dataString);
-		
+		 
 		Collections.sort(statuses, new StatusDataComparator());
 		
 		System.out.println("Data mais antiga: " + statuses.get(0).getCreatedAt());
