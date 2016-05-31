@@ -29,6 +29,7 @@ public class Main {
 			
 			twitterAnalise.analisaTweets(statuses);
 			
+			twitter.updateStatus("@michelpf atividade final postada no portal!");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
